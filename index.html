@@ -19,6 +19,7 @@
 		"@type": "Organization",
 		"name": "Aravali House Poinrs"
 }</script>
+
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="House Points">
     <meta property="og:description" content="">
@@ -34,31 +35,40 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-palette-3-base u-text-2" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">390</h3>
+                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-palette-3-base u-text-2" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000"></h3>
                 <h6 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-3">Himgiri</h6>
               </div>
             </div>
             <div class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-1-base u-text-4" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">550</h3>
+                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-1-base u-text-4" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000"></h3>
                 <h6 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-5">Sagar</h6>
               </div>
             </div>
             <div class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-4-base u-text-6" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">210<br>
+                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-4-base u-text-6" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000"><br>
                 </h3>
                 <h6 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-7">Srishti</h6>
               </div>
             </div>
             <div class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
-                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-2-base u-text-8" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">530</h3>
-                <h6 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-9">vasundhara</h6>
+                <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-default u-text-palette-2-base u-text-8" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000"></h3>
+                <h6 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-9">Vasundhara</h6>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+  const data = ["350","660","210","500"]; // assuming this function returns an array of objects, each containing the count and name properties
+
+  const h3Elements = document.querySelectorAll('.u-list-1 h3'); // get all the h3 elements
+
+  h3Elements.forEach((h3, index) => {
+    h3.textContent = data[index]; // set the text content of the h3 element to the corresponding value in the data array
+  });
+</script>
 </body></html>
