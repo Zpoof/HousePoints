@@ -63,10 +63,12 @@
       </div>
     </section>
     <script>
-  const data = ["350","660","210","500"]; // assuming this function returns an array of objects, each containing the count and name properties
-
+  const url = "https://housepoints-5d82e-default-rtdb.asia-southeast1.firebasedatabase.app/points.json"
+  const request = new XMLHttpRequest();
+  request.open("GET", url, false);
+  request.send();
+  const data = JSON.parse(request.responseText);
   const h3Elements = document.querySelectorAll('.u-list-1 h3'); // get all the h3 elements
-
   h3Elements.forEach((h3, index) => {
     h3.textContent = data[index]; // set the text content of the h3 element to the corresponding value in the data array
   });
